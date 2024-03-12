@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <ul>
+            <li>Образование</li>
+            <li id="dyadya">Посты
+                <ul id="inside">
+                    <li><a href="https://www.youtube.com/">YouTube</a></li>
+                    <li><a href="https://journal.top-academy.ru/index">Journal</a></li>
+                    <li><a href="https://www.tinkercad.com/">Tinkercad</a></li>
+                </ul>
+            </li>
+            <li>Контакты</li>
+        </ul>
+        <button>Заказать</button>
+    </div>
+    <div class="main">
+        <h2>Нравственные ценности</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/hc1kHThT9Ts?si=pzgzaiFYBm7pSq9v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="post">
+            <em>likes: 56</em>
+            <div class="ava"></div>
+            <span>Alex</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsam!</p>
+        </div>
+        <div class="post">
+            <em>likes: 56</em>
+            <div class="ava"></div>
+            <span>Alex</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsam!</p>
+        </div>
+        <div class="post">
+            <em>likes: 56</em>
+            <div class="ava"></div>
+            <span>Alex</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsam!</p>
+        </div>
+    </div>
+    <div class="owl-carousel">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+        <img src="https://i2.wp.com/img-fotki.yandex.ru/get/6000/137106206.63f/0_18ede6_d6ba5848_orig.jpg" alt="">
+    </div>
+    <div class="footer">
+        <ul id="inside">
+            <li><a href="https://www.youtube.com/">YouTube</a></li>
+            <li><a href="https://journal.top-academy.ru/index">Journal</a></li>
+            <li><a href="https://www.tinkercad.com/">Tinkercad</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                arrows: false,
+                responsive: {
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.header{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 0 0 0 50%;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    font-size: 30px;
+    margin: 0 20px;
+    list-style-type: none;
+}
+button{
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 30px;
+    border-radius: 50px;
+    padding: 10px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 50px;
+}
+.ava{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://bogatyr.club/uploads/posts/2023-03/1678516584_bogatyr-club-p-zdorovii-chelovek-foni-krasivo-34.jpg");
+}
+span{
+    font-size: 30px;
+    font-weight: bold;
+}
+.post{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+span{
+    margin: 50px;
+}
+p{
+    font-size: 25px;
+}
+
+
+#dyadya{
+    position: relative;
+}
+#inside{
+    position: absolute;
+    flex-direction: column;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+#dyadya:hover #inside{
+    opacity: 1;
+}
